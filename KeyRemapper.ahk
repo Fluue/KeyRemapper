@@ -1,7 +1,7 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
-global SaveDir := A_MyDocuments "\RemapperV2.0"
+global SaveDir := A_MyDocuments "\Remapperv1.0"
 global SelectedSource := "", SelectedDest := ""
 global ActiveRemaps := []
 global HeldKeys := Map()
@@ -224,7 +224,7 @@ LoadProfile(*) {
     profName := ProfileCombo.Text
     filePath := SaveDir "\" profName ".rmp"
     if !FileExist(filePath) {
-        MsgBox("Couldn't find '" profName "' in Documents\RemapperV2.0", "Error")
+        MsgBox("Couldn't find '" profName "' in Documents\Remapperv1.0", "Error")
         return
     }
     ClearAllRemaps()
